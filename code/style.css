@@ -1,10 +1,12 @@
-
 /* estilo geral*/
 *{
     margin: 0;
     padding: 0;
+}
 
-    box-sizing: border-box;
+body{
+    background-color: rgb(233, 184, 184); 
+    height: 100vh;
     /* Fontes do Google*/
     .poppins-regular {
         font-family: "Poppins", sans-serif;
@@ -14,50 +16,19 @@
     }
 }
 
-body{
-    
-     /* mudar depois */
-    background-color: black; 
-    height: 100vh;
-}
-
-.interface{
-    max-width: 1280px; /* Localização do botão e logo(imagem)*/
-    margin: 0 auto;
-}
-
-header > .interface{
-    display: block; /* botão contato*/
-    align-items: center; /* botão curvo */    
-}
 
 /* estilo da barra lateral*/
 
 header{
-    padding: 40px 4%;
+    padding: 3px 4%; /* margem do site*/
 }
 
 header a{
-    color:rgb(161, 152, 201);
+    color:#8400ff;
     text-decoration: none;
     display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
 
-}
-
-.menu-desktop ul li {
-    display: block; /* Coloca cada item em uma nova linha */
-    margin-bottom: 36px; /* Adiciona espaço entre os itens */
-}
-
-.menu-desktop{ /* Espaço entre o botão de contato e o menu*/
-    margin-top: 30px;
-}
-
-
-header a:hover{ /* ao passar o mouse*/
-    color:rgb(92, 60, 235);
-    transform: scale(1.2);
-    transition: .2s;
 }
 
 header nav ul{
@@ -66,18 +37,92 @@ header nav ul{
 
 header nav ul li{
     display: block;
-    padding: 0 40px; /* distancia entre menu e a margem*/
+    padding: 0 10px; /* distancia entre menu e a margem*/
 }
 
-/* Estilo do botão */
+/* estilo do botão */
 
-header .linkedin button{
-    padding: 10px 40px;
+.botoes-sociais {
+    display: flex; /* alinha os botões horizontalmente */
+    gap: 10px; /* espaço entre os botões */
+}
+
+.linkedin img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    padding: 0 45px;
+}
+
+.github img {
+    width: 30px; 
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    padding: 0px;
+
+}
+.linkedin img:hover,
+.github img:hover {
+    transform: scale(1.1); /* Efeito de hover */
+}
+
+.logo img{
+    width: 130px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    padding-left: 50px;
+}
+
+.menu-desktop ul li {
+    display: block; /* coloca cada item em uma nova linha */
+    margin-bottom: 36px; /* adiciona espaço entre os itens */
+}
+
+.menu-desktop{ /* espaço entre o botão de contato e o menu*/
+    margin-top: 30px;
+}
+
+
+.interface{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 250px;
+    height: 900px;
+    background-color: #020227;
+    animation: slide-in 0.5s ease-in-out;
+}
+.interface{
+    overflow-y: auto; /* permitir rolagem interna*/
+}
+
+@keyframes slide-in {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.interface.open{
+    left: 0;
+}
+.main-content {
+    margin-left: 200px;
+}
+
+/*
+.close-navbar button {
+    padding: 10px 20px; tamanho do botao*
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #8400ff;
     border: 0;
     border-radius: 10px;
-    cursor:pointer;
-}
-
-header .linkedin button:hover{
-    box-shadow: 0px 0px 8px  rgb(144, 117, 180);
-}
+    cursor: pointer;
+    transition: .2s;
+    
+} 
+*/

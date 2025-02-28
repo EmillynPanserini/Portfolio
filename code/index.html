@@ -1,67 +1,71 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google fonts-->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!---->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Portfólio de Emillyn</title>
 </head>
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#"> <!--referencia para melhorar o codigo-->
-                    <img src="images/yuumiWard.jpg" alt="Logo do meu portifólio">
-                </a>
-            </div> <!--logo-->
+    <header>            
+            <div class="interface">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/emy.jpg" alt="Logo do meu portfólio">
+                    </a>
+                </div> <!--logo-->
 
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/emillyn-panserini-0977a0232/" class="botao-foto">
-                    <img src="images/linkedin-icon-png.png" alt="Linkedin Icon">
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/EmillynPanserini" class="botao-foto">
-                    <img src="images" alt="GitHub Icon">
-                </a>
-            </div>
-            
-            <nav class="menu-desktop">  
-                <ul> <!-- Lista de itens-->
-                     <li><a href="#">Início</a></li>
-                     <li><a href="#">Sobre</a></li>
-                     <li><a href="#">Currículo</a></li>
-                     <li><a href="#">Projetos</a></li> <!--lista de itens que não tem relação entre eles-->
-                     <li><a href="#">Especialidades</a></li>
-                     <li><a href="#">Contato</a></li>
-                </ul> <!--Lista de itens aonde a ordem não é importante-->
-            </nav> <!--Navegação-->
+                <!-- botões do linkedIn e GitHub agrupados -->
+                <div class="botoes-sociais">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/emillyn-panserini-0977a0232/" class="botao-foto" aria-label="LinkedIn">
+                            <img src="images/linkedin-icon-png.png" alt="Ícone do LinkedIn">
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/EmillynPanserini" class="botao-foto" aria-label="GitHub">
+                            <img src="images/githubIcon.png" alt="Ícone do GitHub">
+                        </a>
+                    </div>
+                </div> <!--botoes-sociais-->  
 
-        </div> <!--interface -->
+                <div class="close-navbar">
+                <a href="#">
+                    <button id="toggle-button">X</button> 
+                </a>
+                </div><!--botao fechar navbar-->     
+                         
+                <nav class="menu-desktop">  
+                    <ul>
+                        <li><a href="#" title="Página Inicial">Início</a></li>
+                        <li><a href="#" title="Sobre Mim">Sobre</a></li>
+                        <li><a href="#" title="Meu Currículo">Currículo</a></li>
+                        <li><a href="#" title="Meus Projetos">Projetos</a></li>
+                        <li><a href="#" title="Minhas Especialidades">Especialidades</a></li>
+                        <li><a href="#" title="Entre em Contato">Contato</a></li>
+                    </ul>
+                </nav> <!--menu-desktop-->
+            </div> <!--interface -->
     </header>
 
     <main>
         <section class="topo-do-site">
-            <div class="interface">
+            <div class="corpo">
                 <div class="flex">
                     <div class="text-topo-site">
                         <h1>Emillyn Panserini</h1>
-                        
+                        <p>Desenvolvedora Front-End | Estudante de Análise e Desenvolvimento de Sistemas</p>
                     </div> <!--text-topo-site-->
 
-                    <div class="img-topo-site">
-
-                    </div> <!--img-topo-site-->
-
+                    
                 </div> <!--flex-->
-            </div><!--interface-->
-
-        </section>
+            </div> <!--interface-->
+        </section> <!--topo-do-site-->
     </main>
 </body>
 </html>
