@@ -1,11 +1,14 @@
-/* estilo geral*/
+/*
+----------------- Estilo geral -------------------
+*/
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: rgb(233, 184, 184); 
+    background-color: rgb(3, 3, 3); 
     height: 100vh;
     /* Fontes do Google*/
     .poppins-regular {
@@ -16,18 +19,21 @@ body{
     }
 }
 
-
-/* estilo da barra lateral*/
+/*
+----------------- Estilo da barra lateral-------------------
+*/
 
 header{
     padding: 3px 4%; /* margem do site*/
 }
 
+/* Letras */
 header a{
-    color:#8400ff;
+    color:#e3e3e4;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
 
 }
 
@@ -40,21 +46,46 @@ header nav ul li{
     padding: 0 10px; /* distancia entre menu e a margem*/
 }
 
-/* estilo do botão */
-
-.botoes-sociais {
-    display: flex; /* alinha os botões horizontalmente */
-    gap: 10px; /* espaço entre os botões */
+header{
+    position: fixed;
+    top:0;
+    left: -20px;
+    width: 200px;
+    height: 900px;
+    background-color: #3d0055;
+    animation: slide-in 0.5s ease-in-out;
+    
 }
 
-.linkedin img {
+/*
+----------------- Estilo dos icons da barra lateral-------------------
+*/
+
+header nav ul li a i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 1.5rem;
+    display:inline-block;
+}
+
+
+/*
+----------------- Estilo dos botões -------------------
+*/
+
+header .botoes-sociais {
+    display: flex; /* alinha os botões horizontalmente */
+    gap: 10px; /* espaço entre os botões */
+    margin-top: 10px;
+}
+
+header .linkedin img {
     width: 50px; 
     height: auto;
     transition: transform 0.3s ease;
     padding: 0 45px;
 }
 
-.github img {
+header .github img {
     width: 30px; 
     height: auto;
     margin-top: 10px;
@@ -62,17 +93,29 @@ header nav ul li{
     padding: 0px;
 
 }
-.linkedin img:hover,
-.github img:hover {
+header .linkedin img:hover,
+header .github img:hover {
     transform: scale(1.1); /* Efeito de hover */
 }
 
-.logo img{
+/*
+----------------- Perfil-------------------
+*/
+
+.Profile img{
     width: 130px; 
     height: auto;
     transition: transform 0.3s ease;
     padding-left: 50px;
 }
+
+.Profile h1{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* ---------------- Letras  -------------
+*/
 
 .menu-desktop ul li {
     display: block; /* coloca cada item em uma nova linha */
@@ -83,46 +126,14 @@ header nav ul li{
     margin-top: 30px;
 }
 
+/*
+----------------- Main-------------------
+*/
 
-.interface{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 250px;
-    height: 900px;
-    background-color: #020227;
-    animation: slide-in 0.5s ease-in-out;
-}
-.interface{
-    overflow-y: auto; /* permitir rolagem interna*/
-}
 
-@keyframes slide-in {
-    from {
-        left: -200px;
-    }
-    to {
-        left: 0;
-    }
-}
-
-.interface.open{
-    left: 0;
-}
 .main-content {
     margin-left: 200px;
 }
 
-/*
-.close-navbar button {
-    padding: 10px 20px; tamanho do botao*
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #8400ff;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s;
-    
-} 
-*/
+
+
