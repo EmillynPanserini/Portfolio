@@ -1,0 +1,167 @@
+/*
+----------------- Estilo geral -------------------
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(3, 3, 3); 
+    height: 100vh;
+    /* Fontes do Google*/
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    /* ------------------*/
+    }
+}
+
+/*
+----------------- Estilo da barra lateral-------------------
+*/
+
+header{
+    padding: 3px 4%; /* margem do site*/
+}
+
+/* barra toda */
+header a{
+    color:#e3e3e4;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: block;
+    padding: 0 10px; /* distancia entre menu e a margem*/
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: -40px;
+    width: 10px;
+    height: 900px;
+    background-color: #3d0055;
+    animation: slide-in 0.5s ease-in-out;
+    
+}
+
+header:hover{
+   width: 200px;
+}
+
+/*
+----------------- Estilo dos icons da barra lateral-------------------
+*/
+
+header nav ul li a i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 1.5rem;
+    display:inline-block;
+}
+
+
+.btn-expandir {
+    width: 0px;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color:#e3e3e4;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*
+----------------- Estilo dos botões -------------------
+*/
+
+.botoes-sociais {
+    display: flex; /* alinha os botões horizontalmente */
+    gap: 10px; /* espaço entre os botões */
+}
+
+.linkedin img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    padding: 0 45px;
+}
+
+.github img {
+    width: 30px; 
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    padding: 0px;
+
+}
+header .linkedin img:hover,
+header .github img:hover {
+    transform: scale(1.1); /* Efeito de hover */
+}
+
+/*
+----------------- Perfil-------------------
+*/
+
+.Profile img{
+    width: 130px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    padding-left: 50px;
+}
+
+.Profile h1{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* ---------------- Letras  -------------
+*/
+
+ul li {
+    display: block; /* coloca cada item em uma nova linha */
+    margin-bottom: 36px; /* adiciona espaço entre os itens */
+}
+
+
+
+ul{ /* espaço entre o botão redes e o menu*/
+    margin-top: 10px;
+}
+
+nav ul{
+    margin-top: 10px
+}
+
+/*
+----------------- Main-------------------
+*/
+
+
+.main-content {
+    margin-left: 200px;
+}
+
+/*
+
+------------------ Estilo do topo do site---------------
+
+
+*/
+
+
+
+

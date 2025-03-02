@@ -1,5 +1,5 @@
 /*
------------------ Estilo geral -------------------
+<========================== Corpo geral  ==========================>
 */
 
 *{
@@ -9,7 +9,7 @@
 
 body{
     background-color: rgb(3, 3, 3); 
-    height: 100vh;
+    height: 900vh;
     /* Fontes do Google*/
     .poppins-regular {
         font-family: "Poppins", sans-serif;
@@ -19,59 +19,37 @@ body{
     }
 }
 
+
+
 /*
------------------ Estilo da barra lateral-------------------
+<===================== Estilo da barra lateral ==========================>
 */
 
-header{
-    padding: 3px 4%; /* margem do site*/
-}
+/*
+----------------- Geral -------------------
+*/
 
-/* barra toda */
-header a{
-    color:#e3e3e4;
-    text-decoration: none;
-    display: flex;
-    transition: color 0.3s ease, transform 0.3s ease;
-    font-size: 20px;
-
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: block;
-    padding: 0 10px; /* distancia entre menu e a margem*/
-}
-
-header{
-    position: fixed;
-    top:0;
-    left: -40px;
-    width: 10px;
-    height: 900px;
+nav.interface{
+    width: 40px;
+    height: 100%;
     background-color: #3d0055;
-    animation: slide-in 0.5s ease-in-out;
-    
+    padding: 10px 0 40px 0; /* Cima Direito Embaixo Esquerdo */
+    box-shadow: 3px 0 0 #c869ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
 }
 
-header:hover{
-   width: 200px;
+nav.interface.expandir{
+    width: 250px;
 }
+
 
 /*
------------------ Estilo dos icons da barra lateral-------------------
-*/
-
-header nav ul li a i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    font-size: 1.5rem;
-    display:inline-block;
-}
-
-
+-------- Botão de expandir --------
+ */
 .btn-expandir {
     width: 0px;
     padding-left: 10px;
@@ -83,44 +61,57 @@ header nav ul li a i {
     cursor: pointer;
 }
 
+
 /*
------------------ Estilo dos botões -------------------
+-------- Letras e Icon ------------
 */
 
-header .botoes-sociais {
-    display: flex; /* alinha os botões horizontalmente */
-    gap: 10px; /* espaço entre os botões */
+ul{
+    height: 100%;
+    list-style-type: none;
 }
 
-header .linkedin img {
-    width: 50px; 
-    height: auto;
-    transition: transform 0.3s ease;
-    padding: 0 45px;
+ul li.item-menu{
+    transition: .2s;
 }
 
-header .github img {
-    width: 30px; 
-    height: auto;
-    margin-top: 10px;
-    transition: transform 0.3s ease;
-    padding: 0px;
+ul li.ativo{
+    background-color:#c869ee;
+}
+
+ul li.item-menu:hover{
+    background: #c869ee;
+}
+
+ul li.item-menu a{
+    color: #dedee4;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%; /*(Cima + Baixo)  (Esquerda + Direita - laterais) */
+    display: flex;
+    line-height: 20px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 30px; /*Espaço entre botão e texto*/
 
 }
-header .linkedin img:hover,
-header .github img:hover {
-    transform: scale(1.1); /* Efeito de hover */
+    
+ul li.item-menu a .icon > i{
+    font-size: 20px;
+    margin-left: 10px;
 }
+
 
 /*
------------------ Perfil-------------------
+------------ Perfil-------------------
 */
 
 .Profile img{
     width: 130px; 
     height: auto;
     transition: transform 0.3s ease;
-    padding-left: 50px;
+    padding-left: 65px;
 }
 
 .Profile h1{
@@ -128,32 +119,32 @@ header .github img:hover {
     margin-left: 40px;
 }
 
-/* ---------------- Letras  -------------
+/*
+-------- Botões do Perfil -------------
 */
 
-ul li {
-    display: block; /* coloca cada item em uma nova linha */
-    margin-bottom: 36px; /* adiciona espaço entre os itens */
+.botoes-sociais ul {
+    display:flex;
+    padding: 10px 0 0 85px;/* Cima Direito Embaixo Esquerdo */
+    gap: 50px;
+    font-size: 20px;
 }
 
-
-
-ul{ /* espaço entre o botão redes e o menu*/
-    margin-top: 10px;
+.botoes-sociais li a {
+    text-decoration: none;
+    color: #c869ee; 
+    transition: color 0.3s ease; 
+}
+.botoes-sociais li a:hover {
+    color: #dedee4; 
 }
 
-nav ul{
-    margin-top: 10px
-}
 
 /*
 ----------------- Main-------------------
 */
 
 
-.main-content {
-    margin-left: 200px;
-}
 
 /*
 
